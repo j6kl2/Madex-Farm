@@ -1,0 +1,435 @@
+--New Scripts and Videos coming daily! Subscribe to GucciMilk on YouTube.
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ToolCounter = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local StrengthEarned = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local DeleteHUDAll = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local StopNAL = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local NAL = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Frame2Title = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local Info = Instance.new("TextBox")
+local UICorner_9 = Instance.new("UICorner")
+local WaitTimer = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local equip = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local lift = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Unequip = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local StopLifting = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Gui = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local close = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local AntiAfk = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.340173632, 0, 0.109336607, 0)
+Frame.Size = UDim2.new(0, 365, 0, 468)
+
+UICorner.Parent = Frame
+
+Frame2.Parent = Frame
+Frame2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame2.Position = UDim2.new(1, 0, 0, 0)
+Frame2.Size = UDim2.new(0, 365, 0, 468)
+Frame2.Visible = false
+
+UICorner_2.Parent = Frame2
+
+Frame2Title.Parent = Frame2
+Frame2Title.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Frame2Title.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame2Title.Position = UDim2.new(0.08421731, 0, 0.08, 0)
+Frame2Title.Size = UDim2.new(0, 300, 0, 50)
+Frame2Title.TextWrapped = true
+Frame2Title.Text = "Second Page"
+Frame2Title.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+Frame2Title.Font = Enum.Font.FredokaOne
+Frame2Title.TextSize = 35
+Frame2Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Frame2Title.TextStrokeTransparency = 0.000
+
+UICorner_3.Parent = Frame2Title
+
+Info.Name = "Info"
+Info.Parent = Frame
+Info.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Info.Position = UDim2.new(0.03, 0, 0.03, 0)
+Info.Size = UDim2.new(0, 300, 0, 50)
+Info.Font = Enum.Font.FredokaOne
+Info.Text = "(Madex Farm Script)"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextScaled = true
+Info.TextSize = 5
+Info.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+Info.TextWrapped = true
+Info.ClearTextOnFocus = false
+Info.TextStrokeTransparency = 0.000
+
+UICorner_4.Parent = Info
+
+WaitTimer.Name = "WaitTimerChange"
+WaitTimer.Parent = Frame
+WaitTimer.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+WaitTimer.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WaitTimer.Position = UDim2.new(0.03, 0, 0.17185, 0)
+WaitTimer.Size = UDim2.new(0, 338, 0, 37.5)
+WaitTimer.Font = Enum.Font.FredokaOne
+WaitTimer.Text = "Insert Wait Timer Here..."
+WaitTimer.TextColor3 = Color3.fromRGB(255, 255, 255)
+WaitTimer.TextScaled = true
+WaitTimer.TextSize = 5
+WaitTimer.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+WaitTimer.TextWrapped = true
+WaitTimer.TextStrokeTransparency = 0.000
+
+UICorner_5.Parent = WaitTimer
+
+Unequip.Name = "equip"
+Unequip.Parent = Frame
+Unequip.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Unequip.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Unequip.Position = UDim2.new(0.257131338, 0, 0.287386566, 0)
+Unequip.Size = UDim2.new(0, 172, 0, 50)
+Unequip.Font = Enum.Font.FredokaOne
+Unequip.Text = "Unequip"
+Unequip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unequip.TextSize = 30.000
+Unequip.TextWrapped = true 
+Unequip.TextStrokeTransparency = 0.000
+
+UICorner_6.Parent = Unequip
+
+equip.Name = "equip"
+equip.Parent = Frame
+equip.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+equip.BorderColor3 = Color3.fromRGB(255, 255, 255)
+equip.Position = UDim2.new(0.257131338, 0, 0.287386566, 0)
+equip.Size = UDim2.new(0, 172, 0, 50)
+equip.Font = Enum.Font.FredokaOne
+equip.Text = "Equip"
+equip.TextColor3 = Color3.fromRGB(255, 255, 255)
+equip.TextSize = 30.000
+equip.TextWrapped = true
+equip.TextStrokeTransparency = 0.000
+
+UICorner_7.Parent = equip
+
+StopLifting.Name = "StopLifting"
+StopLifting.Parent = Frame
+StopLifting.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+StopLifting.BorderColor3 = Color3.fromRGB(255, 255, 255)
+StopLifting.Position = UDim2.new(0.262099504, 0, 0.461822569, 0)
+StopLifting.Size = UDim2.new(0, 172, 0, 50)
+StopLifting.Font = Enum.Font.FredokaOne
+StopLifting.Text = "StopLift"
+StopLifting.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopLifting.TextSize = 30.000
+StopLifting.TextWrapped = true
+StopLifting.TextStrokeTransparency = 0.000
+
+UICorner_8.Parent = StopLifting
+
+lift.Name = "lift"
+lift.Parent = Frame
+lift.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+lift.BorderColor3 = Color3.fromRGB(255, 255, 255)
+lift.Position = UDim2.new(0.262099504, 0, 0.461822569, 0)
+lift.Size = UDim2.new(0, 172, 0, 50)
+lift.Font = Enum.Font.FredokaOne
+lift.Text = "Lift"
+lift.TextColor3 = Color3.fromRGB(255, 255, 255)
+lift.TextSize = 30.000
+lift.TextWrapped = true
+lift.TextStrokeTransparency = 0.000
+
+UICorner_9.Parent = lift
+
+Gui.Name = "Gui"
+Gui.Parent = Frame
+Gui.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Gui.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Gui.Position = UDim2.new(0.263693094, 0, 0.63941735, 0)
+Gui.Size = UDim2.new(0, 172, 0, 50)
+Gui.Font = Enum.Font.FredokaOne
+Gui.Text = "Gui"
+Gui.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gui.TextSize = 30.000
+Gui.TextStrokeTransparency = 0.000
+
+UICorner_10.Parent = Gui
+
+close.Name = "close"
+close.Parent = Frame
+close.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+close.Position = UDim2.new(0.906135142, 0, 0, 0)
+close.Size = UDim2.new(0, 34, 0, 30)
+close.Font = Enum.Font.FredokaOne
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 30.000
+
+UICorner_11.Parent = close
+
+AntiAfk.Name = "Anti Afk"
+AntiAfk.Parent = Frame
+AntiAfk.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+AntiAfk.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.Position = UDim2.new(0.257534236, 0, 0.822649539, 0)
+AntiAfk.Size = UDim2.new(0, 172, 0, 50)
+AntiAfk.Font = Enum.Font.FredokaOne
+AntiAfk.Text = "Anti Afk"
+AntiAfk.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.TextSize = 30.000
+AntiAfk.TextStrokeTransparency = 0.000
+
+UICorner_12.Parent = AntiAfk
+
+StrengthEarned.Name = "StrengthEarned"
+StrengthEarned.Parent = Frame2
+StrengthEarned.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+StrengthEarned.BorderColor3 = Color3.fromRGB(255, 255, 255)
+StrengthEarned.Position = UDim2.new(0.262099504, 0, 0.461822569, 0)
+StrengthEarned.Size = UDim2.new(0, 172, 0, 50)
+StrengthEarned.Font = Enum.Font.FredokaOne
+StrengthEarned.Text = "Strength Earned"
+StrengthEarned.TextColor3 = Color3.fromRGB(255, 255, 255)
+StrengthEarned.TextSize = 22.500
+StrengthEarned.TextStrokeTransparency = 0.000
+
+UICorner_13.Parent = StrengthEarned
+
+local str = game:GetService("Players").LocalPlayer.leaderstats.Strength;
+local curvalue = str.Value;
+local earned = 0;
+str:GetPropertyChangedSignal("Value"):Connect(function()
+	local delta = (str.Value - curvalue);
+	earned += delta;
+	StrengthEarned.Text = "SE: "..earned;
+	curvalue = str.Value;
+end)
+
+ToolCounter.Name = "ToolCounter"
+ToolCounter.Parent = Frame2
+ToolCounter.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+ToolCounter.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ToolCounter.Position = UDim2.new(0.257131338, 0, 0.287386566, 0)
+ToolCounter.Size = UDim2.new(0, 172, 0, 50)
+ToolCounter.Font = Enum.Font.FredokaOne
+ToolCounter.Text = "0 DW/DB"
+ToolCounter.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToolCounter.TextSize = 30.000
+ToolCounter.TextWrapped = true
+ToolCounter.TextStrokeTransparency = 0.000
+
+UICorner_14.Parent = ToolCounter
+
+DeleteHUDAll.Name = "deletehud"
+DeleteHUDAll.Parent = Frame2
+DeleteHUDAll.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+DeleteHUDAll.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DeleteHUDAll.Position = UDim2.new(0.263693094, 0, 0.63941735, 0)
+DeleteHUDAll.Size = UDim2.new(0, 172, 0, 50)
+DeleteHUDAll.Font = Enum.Font.FredokaOne
+DeleteHUDAll.Text = "DeleteAllofHUD"
+DeleteHUDAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+DeleteHUDAll.TextSize = 25
+DeleteHUDAll.TextStrokeTransparency = 0.000
+DeleteHUDAll.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.HUD:Destroy()
+end)
+
+UICorner_15.Parent = DeleteHUDAll
+
+StopNAL.Name = "StopNoAnimationLift"
+StopNAL.Parent = Frame2
+StopNAL.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+StopNAL.BorderColor3 = Color3.fromRGB(255, 255, 255)
+StopNAL.Position = UDim2.new(0.257534236, 0, 0.822649539, 0)
+StopNAL.Size = UDim2.new(0, 172, 0, 50)
+StopNAL.Font = Enum.Font.FredokaOne
+StopNAL.Text = "Stop NAL"
+StopNAL.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopNAL.TextSize = 27.500
+StopNAL.TextStrokeTransparency = 0.000
+StopNAL.MouseButton1Click:Connect(function()
+	StopNAL.Visible = false
+	NAL.Visible = true
+	for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA('MeshPart') then v.Anchored = false
+		end
+	end
+end)
+
+UICorner_16.Parent = StopNAL
+
+NAL.Name = "NoAnimationLift"
+NAL.Parent = Frame2
+NAL.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+NAL.BorderColor3 = Color3.fromRGB(255, 255, 255)
+NAL.Position = UDim2.new(0.257534236, 0, 0.822649539, 0)
+NAL.Size = UDim2.new(0, 172, 0, 50)
+NAL.Font = Enum.Font.FredokaOne
+NAL.Text = "NAL"
+NAL.TextColor3 = Color3.fromRGB(255, 255, 255)
+NAL.TextSize = 27.500
+NAL.TextStrokeTransparency = 0.000
+NAL.MouseButton1Click:Connect(function()
+	NAL.Visible = false
+	StopNAL.Visible = true
+	for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA('MeshPart') then v.Anchored = true
+		end
+	end
+end)
+
+UICorner_17.Parent = NAL
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Close.Position = UDim2.new(0.875, 0, 0.9, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "<"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 30.000
+Close.Visible = false
+Close.MouseButton1Click:Connect(function()
+	Frame2.Visible = false
+	Close.Visible = false
+	Open.Visible = true
+end)
+
+UICorner_18.Parent = Close
+
+Open.Name = "Open"
+Open.Parent = Frame
+Open.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Open.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0.875, 0, 0.9, 0)
+Open.Size = UDim2.new(0, 30, 0, 30)
+Open.Font = Enum.Font.FredokaOne
+Open.Text = ">"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 30.000
+Open.MouseButton1Click:Connect(function()
+	Frame2.Visible = true
+	Open.Visible = false
+	Close.Visible = true
+end)
+
+UICorner_19.Parent = Open
+
+-- Scripts:
+
+local function TSAFGUB_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	--By DriedUpCat
+
+	frame = script.Parent.Frame --Name of your frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(TSAFGUB_fake_script)()
+
+StopLifting.MouseButton1Click:connect(function()
+	StopLifting.Visible = false
+	lift.Visible = true
+	_G.Auto4 = false
+end)
+
+lift.MouseButton1Click:connect(function()
+	lift.Visible = false
+	StopLifting.Visible = true
+	_G.Auto4 = true
+	while _G.Auto4 do
+		wait(WaitTimer.Text)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == Info.Text then v:Activate() end
+
+
+		end
+	end
+end)
+
+Unequip.MouseButton1Click:connect(function()
+	Unequip.Visible = false
+	equip.Visible = true
+	_G.Equip = false
+end)
+
+equip.MouseButton1Click:connect(function()
+	equip.Visible = false
+	Unequip.Visible = true
+	_G.Equip = true
+	while _G.Equip do
+		wait()
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v.Name == Info.Text then v:Activate()
+				v.Parent = game.Players.LocalPlayer.Character
+			end
+		end
+	end
+end)
+
+Gui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/j6kl2/S_/main/gfgfdgjdgldmbgkfdfg", true))()
+end)
+
+close.MouseButton1Click:connect(function()
+	close.Visible = true
+	Frame.Visible = false
+	close.Visible = false
+end)
+
+AntiAfk.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/SN4agUmB", true))()
+end)
+
+local function XVYMLY_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+	frame = script.Parent.Parent
+end
+
+coroutine.wrap(XVYMLY_fake_script)()
+
+repeat
+	wait(.1)
+	local num = 0
+	for i,v in pairs(game:GetService("CoreGui").RobloxGui.Backpack.Inventory.ScrollingFrame.UIGridFrame:GetChildren()) do
+		if v:IsA("TextButton") then
+			num += 1
+		end
+	end
+
+	ToolCounter.Text = num .." DW/DB"
+until num == 9999999999999
